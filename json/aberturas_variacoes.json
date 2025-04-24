@@ -1,0 +1,219 @@
+{
+  "Abertura Italiana": {
+    "Giuoco Piano": {
+      "lances": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "c3", "Nf6", "d4"],
+      "descricao": "A linha Giuoco Piano é uma abordagem tradicional e tranquila da Italiana, focando no controle do centro e desenvolvimento rápido.",
+      "jogadores": ["Magnus Carlsen", "Viswanathan Anand"],
+      "explicacoes": [
+        "1.e4: Domina o centro e abre diagonais para dama e bispo.",
+        "1...e5: Responde controlando o centro igualmente.",
+        "2.Nf3: Ataca o peão e5, desenvolve peça rapidamente.",
+        "2...Nc6: Defende e5 e prepara mais desenvolvimento.",
+        "3.Bc4: Ataca o ponto fraco f7, pressiona a ala do rei.",
+        "3...Bc5: Desenvolvimento natural, protege f7, prepara roque.",
+        "4.c3: Prepara d4 para ganhar espaço central.",
+        "4...Nf6: Desenvolve e pressiona e4, prepara roque.",
+        "5.d4: Avança no centro, abre o jogo para as peças brancas."
+      ]
+    },
+    "Evans Gambit": {
+      "lances": ["e4", "e5", "Nf3", "Nc6", "Bc4", "Bc5", "b4"],
+      "descricao": "O Gambito Evans é uma linha agressiva em busca de iniciativa e jogo tático desde cedo.",
+      "jogadores": ["Garry Kasparov", "Paul Morphy"],
+      "explicacoes": [
+        "1.e4: Ganha espaço e abre linhas para as peças.",
+        "1...e5: Equilibra o centro.",
+        "2.Nf3: Ataca o peão e5.",
+        "2...Nc6: Defende e5, desenvolve peça.",
+        "3.Bc4: Foca em atacar o ponto f7.",
+        "3...Bc5: Desenvolve e protege f7.",
+        "4.b4: Sacrifica um peão para ganhar tempo e abrir linhas."
+      ]
+    }
+  },
+  "Defesa Siciliana": {
+    "Najdorf": {
+      "lances": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6"],
+      "descricao": "A Variante Najdorf é uma das linhas mais populares da Defesa Siciliana, caracterizada por 5...a6, permitindo flexibilidade no desenvolvimento das peças pretas.",
+      "jogadores": ["Garry Kasparov", "Bobby Fischer"],
+      "explicacoes": [
+        "1.e4: Domina o centro.",
+        "1...c5: Defesa Siciliana, desequilibra o jogo.",
+        "2.Nf3: Pressiona o centro.",
+        "2...d6: Protege c5, prepara ...Nf6 e ...e6.",
+        "3.d4: Busca abrir o centro.",
+        "3...cxd4: Aceita a troca central.",
+        "4.Nxd4: Recupera material, mantém o centro.",
+        "4...Nf6: Ataca e4 e prepara desenvolvimento.",
+        "5.Nc3: Defende e4, fortalece o centro.",
+        "5...a6: Move flexível, prepara ...e6, ...b5 ou ...Nbd7."
+      ]
+    },
+    "Dragão": {
+      "lances": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "g6"],
+      "descricao": "A Variante Dragão é conhecida por seu jogo agressivo e tático, com o fianchetto do bispo em g7.",
+      "jogadores": ["Magnus Carlsen", "Hikaru Nakamura"],
+      "explicacoes": [
+        "1.e4: Domina o centro.",
+        "1...c5: Defesa Siciliana, cria jogo dinâmico.",
+        "2.Nf3: Desenvolve e pressiona o centro.",
+        "2...d6: Reforça o peão c5, abre caminho para ...Nf6.",
+        "3.d4: Busca abrir o centro.",
+        "3...cxd4: Aceita a troca.",
+        "4.Nxd4: Recupera o peão central.",
+        "4...Nf6: Pressiona e4, desenvolve cavalo.",
+        "5.Nc3: Defende e4, fortalece centro.",
+        "5...g6: Prepara fianchetto do bispo e jogo nas diagonais longas."
+      ]
+    }
+  },
+  "Defesa Francesa": {
+    "Tarrasch": {
+      "lances": ["e4", "e6", "d4", "d5", "Nd2"],
+      "descricao": "A Variante Tarrasch busca evitar a troca de peças e mantém a tensão no centro, oferecendo chances dinâmicas para ambos os lados.",
+      "jogadores": ["Ulf Andersson", "Nigel Short"],
+      "explicacoes": [
+        "1.e4: Domina o centro.",
+        "1...e6: Prepara d5, Defesa Francesa.",
+        "2.d4: Avança no centro, ganha espaço.",
+        "2...d5: Contra-ataca o centro das brancas.",
+        "3.Nd2: Prepara c3 ou e5, evita trocas rápidas."
+      ]
+    },
+    "Winawer": {
+      "lances": ["e4", "e6", "d4", "d5", "Nc3", "Bb4"],
+      "descricao": "A Variante Winawer é conhecida por sua complexidade e desequilíbrios estruturais, proporcionando jogos ricos em táticas.",
+      "jogadores": ["Bobby Fischer", "Viktor Korchnoi"],
+      "explicacoes": [
+        "1.e4: Domina o centro.",
+        "1...e6: Defesa Francesa.",
+        "2.d4: Ganha espaço e prepara desenvolvimento.",
+        "2...d5: Pressiona o centro das brancas.",
+        "3.Nc3: Defende e4, prepara e5.",
+        "3...Bb4: Crava o cavalo, pressiona o centro."
+      ]
+    }
+  },
+  "Defesa Caro-Kann": {
+    "Clássica": {
+      "lances": ["e4", "c6", "d4", "d5", "Nc3", "dxe4", "Nxe4", "Bf5"],
+      "descricao": "A Variante Clássica da Caro-Kann é sólida e confiável, com desenvolvimento do bispo para f5.",
+      "jogadores": ["Anatoly Karpov", "Vishy Anand"],
+      "explicacoes": [
+        "1.e4: Domina o centro.",
+        "1...c6: Prepara d5, Defesa Caro-Kann.",
+        "2.d4: Ocupa o centro.",
+        "2...d5: Pressiona o centro das brancas.",
+        "3.Nc3: Desenvolve e prepara e5.",
+        "3...dxe4: Aceita a troca no centro.",
+        "4.Nxe4: Recupera material, centraliza cavalo.",
+        "4...Bf5: Desenvolve e pressiona c2."
+      ]
+    },
+    "Avanço": {
+      "lances": ["e4", "c6", "d4", "d5", "e5"],
+      "descricao": "A Variante do Avanço busca espaço no centro e restringe o desenvolvimento das peças pretas.",
+      "jogadores": ["Vladimir Kramnik", "Fabiano Caruana"],
+      "explicacoes": [
+        "1.e4: Domina o centro.",
+        "1...c6: Defesa Caro-Kann.",
+        "2.d4: Ocupa o centro.",
+        "2...d5: Ataca o centro das brancas.",
+        "3.e5: Avança peão, limita peças pretas."
+      ]
+    }
+  },
+  "Gambito da Rainha": {
+    "Aceito": {
+      "lances": ["d4", "d5", "c4", "dxc4"],
+      "descricao": "O Gambito da Rainha Aceito é uma das principais linhas para combater o gambito, aceitando o peão para depois tentar devolvê-lo em boas condições.",
+      "jogadores": ["Boris Spassky", "Mikhail Botvinnik"],
+      "explicacoes": [
+        "1.d4: Controla o centro.",
+        "1...d5: Equilibra o centro.",
+        "2.c4: Oferece o peão para abrir linhas.",
+        "2...dxc4: Aceita o gambito, pega o peão."
+      ]
+    },
+    "Recusado": {
+      "lances": ["d4", "d5", "c4", "e6"],
+      "descricao": "O Gambito da Rainha Recusado mantém a solidez das pretas, evitando tomar o peão oferecido.",
+      "jogadores": ["Vladimir Kramnik", "Tigran Petrosian"],
+      "explicacoes": [
+        "1.d4: Domina o centro.",
+        "1...d5: Ocupa o centro.",
+        "2.c4: Oferece peão em troca de iniciativa.",
+        "2...e6: Protege d5, recusa o gambito."
+      ]
+    }
+  },
+  "Ruy López (Espanhola)": {
+    "Clássica": {
+      "lances": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7"],
+      "descricao": "A Variante Clássica da Ruy López é uma das linhas mais tradicionais, focando no controle do centro e desenvolvimento rápido das peças.",
+      "jogadores": ["José Raúl Capablanca", "Anatoly Karpov"],
+      "explicacoes": [
+        "1.e4: Controla o centro.",
+        "1...e5: Equilibra o centro.",
+        "2.Nf3: Ataca o peão e5.",
+        "2...Nc6: Defende e5.",
+        "3.Bb5: Pressiona cavalo c6.",
+        "3...a6: Expulsa o bispo.",
+        "4.Ba4: Mantém pressão.",
+        "4...Nf6: Desenvolve cavalo.",
+        "5.O-O: Roque rápido.",
+        "5...Be7: Prepara roque das pretas."
+      ]
+    },
+    "Berlim": {
+      "lances": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nf6"],
+      "descricao": "Conhecida por sua solidez, a Variante Berlim ganhou destaque no xadrez moderno por sua resistência e estrutura defensiva.",
+      "jogadores": ["Vladimir Kramnik", "Magnus Carlsen"],
+      "explicacoes": [
+        "1.e4: Controla o centro.",
+        "1...e5: Igualdade central.",
+        "2.Nf3: Pressiona e5.",
+        "2...Nc6: Defende e5.",
+        "3.Bb5: Pressiona c6.",
+        "3...Nf6: Desenvolve cavalo, ataca e4."
+      ]
+    }
+  },
+  "Defesa Índia do Rei": {
+    "Clássica": {
+      "lances": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "Nf3", "O-O", "Be2", "e5"],
+      "descricao": "A Variante Clássica da Índia do Rei é uma das linhas mais sólidas e estratégicas, com planos bem estabelecidos para ambos os lados.",
+      "jogadores": ["Garry Kasparov", "Hikaru Nakamura"],
+      "explicacoes": [
+        "1.d4: Controla o centro.",
+        "1...Nf6: Desenvolve cavalo, pressiona e4.",
+        "2.c4: Ocupa mais espaço no centro.",
+        "2...g6: Prepara fianchetto do bispo.",
+        "3.Nc3: Fortalece o centro.",
+        "3...Bg7: Fianchetto, domina diagonal.",
+        "4.e4: Ganha centro forte.",
+        "4...d6: Prepara ...e5.",
+        "5.Nf3: Desenvolve peça, prepara roque.",
+        "5...O-O: Roque rápido.",
+        "6.Be2: Prepara roque das brancas.",
+        "6...e5: Rompe o centro e desafia as brancas."
+      ]
+    },
+    "Sämisch": {
+      "lances": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6", "f3"],
+      "descricao": "A Variante Sämisch é uma abordagem agressiva das brancas, buscando controlar o centro e preparar um ataque no flanco do rei.",
+      "jogadores": ["Mikhail Botvinnik", "Boris Spassky"],
+      "explicacoes": [
+        "1.d4: Domina o centro.",
+        "1...Nf6: Pressiona o centro.",
+        "2.c4: Prepara Nc3 e ocupa espaço.",
+        "2...g6: Prepara Bg7.",
+        "3.Nc3: Fortalece o centro.",
+        "3...Bg7: Fianchetto, domínio de casa central.",
+        "4.e4: Ganha espaço.",
+        "4...d6: Prepara ...e5.",
+        "5.f3: Prepara e4-e5, dá apoio ao centro."
+      ]
+    }
+  }
+}

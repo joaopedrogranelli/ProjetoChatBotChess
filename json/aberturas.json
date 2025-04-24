@@ -1,0 +1,38 @@
+[
+    {
+      "nome": "Abertura Italiana",
+      "lances": "1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5",
+      "eco": "C50",
+      "descricao": "A Abertura Italiana é uma das aberturas mais clássicas e populares do xadrez, focada no controle do centro e rápido desenvolvimento das peças menores.",
+      "explicacao": "O objetivo é desenvolver o bispo para c4 e pressionar o ponto f7 das pretas, mantendo o rei branco seguro e preparando o roque curto."
+    },
+    {
+      "nome": "Defesa Siciliana",
+      "lances": "1.e4 c5",
+      "eco": "B20",
+      "descricao": "A Defesa Siciliana é uma das respostas mais combativas das pretas contra 1.e4, levando a jogos dinâmicos e assimétricos.",
+      "explicacao": "As pretas desafiam o centro imediatamente, evitando simetria e preparando o desenvolvimento rápido das peças do lado da dama."
+    },
+    {
+      "nome": "Defesa Francesa",
+      "lances": "1.e4 e6",
+      "eco": "C00",
+      "descricao": "A Defesa Francesa permite às pretas desafiar o centro, apoiando o avanço d5 na segunda jogada.",
+      "explicacao": "O plano das pretas é jogar d5 e criar um centro sólido, com jogo estratégico e batalhas de espaço no tabuleiro."
+    },
+    {
+      "nome": "Defesa Caro-Kann",
+      "lances": "1.e4 c6",
+      "eco": "B10",
+      "descricao": "A Caro-Kann é uma defesa sólida, frequentemente usada por jogadores que preferem posições estratégicas a táticas.",
+      "explicacao": "Após 2.d4 d5, as pretas garantem uma estrutura de peões estável e desenvolvimento seguro das peças."
+    },
+    {
+      "nome": "Gambito da Rainha",
+      "lances": "1.d4 d5 2.c4",
+      "eco": "D06",
+      "descricao": "O Gambito da Rainha é uma das aberturas mais estudadas do xadrez, onde as brancas oferecem um peão para obter controle do centro.",
+      "explicacao": "Se as pretas aceitarem o gambito, as brancas podem obter rápido desenvolvimento e pressionar o centro, mesmo sem recuperar o peão imediatamente."
+    }
+  ]
+  

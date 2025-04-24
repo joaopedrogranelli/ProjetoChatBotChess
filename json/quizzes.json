@@ -1,0 +1,22 @@
+[
+    {
+        "pergunta": "Qual o único lance possível que pode ser feito tanto pelo rei quanto pela torre?",
+        "resposta": "Roque"
+    },
+    {
+        "pergunta": "Qual peça pode se mover em 'L' no tabuleiro?",
+        "resposta": "Cavalo"
+    },
+    {
+        "pergunta": "Como se chama o movimento onde um peão captura outro peão que acabou de avançar duas casas?",
+        "resposta": "En passant"
+    },
+    {
+        "pergunta": "Como se chama o empate causado por ausência de lances legais, mas sem xeque?",
+        "resposta": "Afogamento"
+    },
+    {
+        "pergunta": "Qual peça começa no canto do tabuleiro?",
+        "resposta": "Torre"
+    }
+]
