@@ -1,4 +1,5 @@
 import gradio as gr
+from estudo import analisar_tabuleiro
 from utils import carregar_personalidade, carregar_aberturas_variacoes, carregar_dicas, carregar_quizzes
 from chatbot import responder_chat, enviar_dica, enviar_quiz, responder_quiz
 from estudo import atualizar_variacoes, iniciar_estudo, navegar_lance
@@ -51,6 +52,8 @@ with gr.Blocks(theme=gr.themes.Soft(), title="Xadrez Interativo") as demo:
             info_output = gr.Markdown()
             explicacao_output = gr.Markdown()
             tabuleiro_output = gr.HTML()
+            btn_analise = gr.Button("Analisar posição atual com Stockfish", scale=1)
+            analise_output = gr.Markdown()
             with gr.Row():
                 btn_anterior = gr.Button("◀️ Anterior")
                 btn_reset = gr.Button("⏮️ Reiniciar")
@@ -83,6 +86,11 @@ with gr.Blocks(theme=gr.themes.Soft(), title="Xadrez Interativo") as demo:
                 lambda ab, var, idx: navegar_lance(ab, var, idx-1, aberturas_data),
                 [abertura_dropdown, variacao_dropdown, lance_atual],
                 [tabuleiro_output, explicacao_output, lance_atual]
+            )
+            btn_analise.click(
+                lambda ab, var, idx: analisar_tabuleiro(aberturas_data, ab, var, idx),
+                [abertura_dropdown, variacao_dropdown, lance_atual],
+                analise_output
             )
 
 demo.launch()

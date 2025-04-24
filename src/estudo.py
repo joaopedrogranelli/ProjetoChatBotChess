@@ -1,5 +1,22 @@
 import chess
 import chess.svg
+from stockfish_engine import analisar_fen
+
+def analisar_tabuleiro(aberturas_data, abertura, variacao, indice):
+    if not (abertura and variacao):
+        return "Selecione uma abertura e variação primeiro."
+    dados = aberturas_data[abertura][variacao]
+    lances = dados['lances']
+    board = chess.Board()
+    for lance in lances[:indice]:
+        try:
+            board.push_san(lance)
+        except Exception:
+            break
+    fen = board.fen()
+    melhor_lance, avaliacao = analisar_fen(fen)
+    texto = f"**Melhor lance sugerido:** `{melhor_lance}`\n\n**Avaliação (centipawns):** {avaliacao}"
+    return texto
 
 def atualizar_variacoes(abertura, aberturas_data):
     if abertura:
