@@ -1,0 +1,20 @@
+# Ignore o ambiente virtual (fora da pasta do projeto)
+chatbot_env/
+venv/
+.env
+*.env
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore editores
+.vscode/
+.idea/
+
+# Ignore arquivos temporários
+*.swp
+.DS_Store
+Thumbs.db
+*.log
+*.tmp

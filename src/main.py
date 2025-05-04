@@ -1,8 +1,7 @@
 import gradio as gr
-from estudo import analisar_tabuleiro
+from estudo import analisar_tabuleiro, atualizar_variacoes, iniciar_estudo, navegar_lance
 from utils import carregar_personalidade, carregar_aberturas_variacoes, carregar_dicas, carregar_quizzes
 from chatbot import responder_chat, enviar_dica, enviar_quiz, responder_quiz
-from estudo import atualizar_variacoes, iniciar_estudo, navegar_lance
 
 PERSONALIDADE_FIXA = carregar_personalidade()
 aberturas_data = carregar_aberturas_variacoes()
@@ -48,6 +47,11 @@ with gr.Blocks(theme=gr.themes.Soft(), title="Xadrez Interativo") as demo:
             gr.Markdown("## Estudo Interativo de Aberturas")
             abertura_dropdown = gr.Dropdown(label="Escolha a abertura", choices=lista_aberturas)
             variacao_dropdown = gr.Dropdown(label="Escolha a variação")
+            perspectiva_dropdown = gr.Dropdown(
+                choices=["Brancas", "Pretas"],
+                label="Perspectiva do Tabuleiro",
+                value="Brancas"
+            )
 
             info_output = gr.Markdown()
             explicacao_output = gr.Markdown()
@@ -62,29 +66,43 @@ with gr.Blocks(theme=gr.themes.Soft(), title="Xadrez Interativo") as demo:
             lance_atual = gr.State(0)
             ultima_abertura = gr.State("")
             ultima_variacao = gr.State("")
+            ultima_perspectiva = gr.State("Brancas")
 
+            # Atualiza dropdown de variações ao mudar abertura
             abertura_dropdown.change(
                 lambda ab: gr.update(choices=atualizar_variacoes(ab, aberturas_data), value=None),
                 abertura_dropdown, variacao_dropdown
             )
+
+            # Atualiza tabuleiro, info e explicação ao mudar variação ou perspectiva
+            def atualizar_estudo_interativo(ab, var, perspectiva):
+                svg, info, explicacao, lance_idx = iniciar_estudo(ab, var, aberturas_data, perspectiva)
+                return svg, info, explicacao, lance_idx, ab, var, perspectiva
+
             variacao_dropdown.change(
-                lambda ab, var: (*iniciar_estudo(ab, var, aberturas_data), ab, var),
-                [abertura_dropdown, variacao_dropdown],
-                [tabuleiro_output, info_output, explicacao_output, lance_atual, ultima_abertura, ultima_variacao]
+                atualizar_estudo_interativo,
+                [abertura_dropdown, variacao_dropdown, perspectiva_dropdown],
+                [tabuleiro_output, info_output, explicacao_output, lance_atual, ultima_abertura, ultima_variacao, ultima_perspectiva]
             )
+            perspectiva_dropdown.change(
+                atualizar_estudo_interativo,
+                [abertura_dropdown, variacao_dropdown, perspectiva_dropdown],
+                [tabuleiro_output, info_output, explicacao_output, lance_atual, ultima_abertura, ultima_variacao, ultima_perspectiva]
+            )
+
             btn_proximo.click(
-                lambda ab, var, idx: navegar_lance(ab, var, idx+1, aberturas_data),
-                [abertura_dropdown, variacao_dropdown, lance_atual],
+                lambda ab, var, idx, perspectiva: navegar_lance(ab, var, idx+1, aberturas_data, perspectiva),
+                [abertura_dropdown, variacao_dropdown, lance_atual, perspectiva_dropdown],
                 [tabuleiro_output, explicacao_output, lance_atual]
             )
             btn_reset.click(
-                lambda ab, var: navegar_lance(ab, var, 0, aberturas_data),
-                [abertura_dropdown, variacao_dropdown],
+                lambda ab, var, perspectiva: navegar_lance(ab, var, 0, aberturas_data, perspectiva),
+                [abertura_dropdown, variacao_dropdown, perspectiva_dropdown],
                 [tabuleiro_output, explicacao_output, lance_atual]
             )
             btn_anterior.click(
-                lambda ab, var, idx: navegar_lance(ab, var, idx-1, aberturas_data),
-                [abertura_dropdown, variacao_dropdown, lance_atual],
+                lambda ab, var, idx, perspectiva: navegar_lance(ab, var, idx-1, aberturas_data, perspectiva),
+                [abertura_dropdown, variacao_dropdown, lance_atual, perspectiva_dropdown],
                 [tabuleiro_output, explicacao_output, lance_atual]
             )
             btn_analise.click(
